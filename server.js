@@ -23,7 +23,6 @@ mongo.connect(dataB, function(err,db){
 var redirect = function(collection){
     app.get('/new/:url*',function(req,res){
         //handle redirect here.
-        //make a connection to the document
         //find the document that has the same tinyurl
         //redirect to the original url
         collection.find().toArray(function(err, items, resObj){
@@ -119,9 +118,11 @@ var createTiny = function(collection){
             })
         }
         else{
+            //send not a valid url
             var resObj = {
                 'error': 'not a valid url -- please retype the url in the proper format.  e.g. http://example.com',
             }
+            res.send(resObj)
             console.log('not valid url')
         }
         
