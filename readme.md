@@ -12,7 +12,7 @@ Which you can use to redirect to the orirginal url.
 
 ### Example Usage
 
-`https://dfire-url-shortener.glitch.me/https://google.com`
+`https://dfire-url-shortener.glitch.me/www.google.com`
 will create:
 `https://dfire-url-shortener.glitch.me/new/1`
 which will redirect to:
