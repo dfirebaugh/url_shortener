@@ -4,7 +4,7 @@ Create a file named .env in the root directory and save the mongodb URI in a var
 e.g. `URI=mongodb://<dbuser>:<dbpassword>@ds8888.mlab.com:21896/url-shortener`
 
 `https://dfire-url-shortener.glitch.me/<url-to-shorten>` will create a new shorter url
-e.g. `https://lovely-hygienic.glitch.me/new/2`
+e.g. `https://dfire-url-shortener.glitch.me/new/2`
 Which you can use to redirect to the orirginal url.
 
 
@@ -17,3 +17,6 @@ will create:
 `https://dfire-url-shortener.glitch.me/new/1`
 which will redirect to:
 `https://google.com`
+
+
+If a URL already exists in the database, it will return an error stating that the URL already exists and show you the stored value.
