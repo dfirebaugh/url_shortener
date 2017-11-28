@@ -1,7 +1,19 @@
-User Story: I can pass a URL as a parameter and I will receive a shortened URL in the JSON response.
+### This is a URL shortening api.  
 
-User Story: If I pass an invalid URL that doesn't follow the valid http://www.example.com format, the JSON response will contain an error instead.
+Create a file named .env in the root directory and save the mongodb URI in a variable called URI
+e.g. `URI=mongodb://<dbuser>:<dbpassword>@ds8888.mlab.com:21896/url-shortener`
 
-User Story: When I visit that shortened URL, it will redirect me to my original link.
+`https://dfire-url-shortener.glitch.me/<url-to-shorten>` will create a new shorter url
+e.g. `https://lovely-hygienic.glitch.me/new/2`
+Which you can use to redirect to the orirginal url.
 
 
+
+
+### Example Usage
+
+`https://dfire-url-shortener.glitch.me/https://google.com`
+will create:
+`https://dfire-url-shortener.glitch.me/new/1`
+which will redirect to:
+`https://google.com`
